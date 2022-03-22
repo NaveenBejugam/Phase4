@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <div class="row">
+      <div *ngFor="let temp of quizes" class="col-md-4">
+          <div class="card-body text-center">
+            <hr />
+            <h3 class="card-title">
+              Topic: {{ temp.name }}
+            </h3>
+            
+            <p class="card-text">
+              .......... {{ temp.description }}
+            </p>
+            <a
+              routerLink="/quiz/{{ temp.name }}"
+              class="btn btn-outline-primary"
+              >Click Here to Take.........    {{ temp.name }} Quiz</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+ 
